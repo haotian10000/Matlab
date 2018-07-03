@@ -1,0 +1,266 @@
+VERSION ""
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_: VCU
+
+
+BO_ 237 VCU_ED: 8 VCU
+ SG_ VCU_RollingCounter_ED : 56|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ VCU_SlowChgExitTemp : 48|8@1+ (0.5,-20) [-20|100] "℃" Vector__XXX
+ SG_ VCU_FastChgExitTemp : 40|8@1+ (0.5,-20) [-20|100] "℃" Vector__XXX
+ SG_ VCU_VehicleHighVoltMode : 60|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ VCU_OpeartingMode : 37|3@1+ (1,0) [0|7] "" Vector__XXX
+ SG_ VCU_ESCActive : 36|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ VCU_PowerMode : 32|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ VCU_ACCRequest : 26|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ VCU_ACCStates : 25|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ VCU_ACCEnable : 24|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ VCU_MotMaxChargePower : 16|8@1+ (1,0) [0|250] "kW" Vector__XXX
+ SG_ VCU_MotMaxDischargePower : 8|8@1+ (1,0) [0|250] "kW" Vector__XXX
+ SG_ VCU_MotTargetAcceleration : 0|8@1+ (0.05,-5) [-5|7.75] "" Vector__XXX
+
+BO_ 235 VCU_EB: 8 VCU
+ SG_ VCU_BMSPumpPercent : 62|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ VCU_MCUPumpPercent : 60|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ VCU_RollingCounter_EB : 56|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ VCU_DriverRequireTorque : 40|13@1+ (0.1,-300) [-300|300] "Nm" Vector__XXX
+ SG_ VCU_VehicleSpeedVD : 29|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ VCU_MCUPowerOutput : 28|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ VCU_BrakeSysFault : 27|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ VCU_HVACOffSpecReq : 26|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ VCU_PTCHeatingReq1 : 24|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ VCU_ThrottlePosition : 32|8@1+ (0.393,0) [0|100] "%" Vector__XXX
+ SG_ VCU_ActiveReleaseCmd : 15|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ VCU_PowerOn2ResetReq : 14|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ VCU_MainRelaySts : 13|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ VCU_FastChgRelayCmd : 12|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ VCU_Motor_WaterInletTemp : 16|8@1+ (0.5,-20) [-20|100] "℃" Vector__XXX
+ SG_ VCU_IPAS_AlwEnable : 11|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ VCU_BrakeLightReq : 10|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ VCU_KeyPosition : 8|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ VCU_ACFanReq : 6|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ VCU_AlwChargeSts : 5|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ VCU_ACChargeHVILSts : 4|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ VCU_DCChargeHVILSts : 3|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ VCU_DriveHVILSts : 2|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ VCU_PowerReduceReq : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+
+BO_ 234 VCU_EA: 8 VCU
+ SG_ VCU_ParkingReqToEPB : 50|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ VCU_ESPTorqReqAvailability : 49|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ VCU_AccPedalFault : 48|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ VCU_BrakePedalValue_Reserved : 40|8@1+ (0.393,0) [0|100] "%" Vector__XXX
+ SG_ VCU_CheckSum : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ VCU_RollingCounter : 52|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ VCU_BrakePedalSts : 38|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ VCU_DCDCEnableCmd : 37|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ VCU_BMSEmergencyCmd : 36|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ VCU_BMSMainRelayCmd : 35|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ VCU_GearLevelPosSts : 32|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ VCU_VehicleSts : 34|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ VCU_Vehicle_Warning : 30|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ VCU_DrvControlMode : 29|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ VCU_DrvRequestTorque : 16|13@1+ (0.1,-300) [-300|300] "Nm" Vector__XXX
+ SG_ VCU_DrvRequesSpeed : 0|16@1+ (1,-15000) [-15000|15000] "rpm" Vector__XXX
+
+
+
+CM_ SG_ 237 VCU_RollingCounter_ED "生命信号";
+CM_ SG_ 237 VCU_SlowChgExitTemp "慢速充电口温度";
+CM_ SG_ 237 VCU_FastChgExitTemp "快速充电口温度";
+CM_ SG_ 237 VCU_VehicleHighVoltMode "VCU高压模式";
+CM_ SG_ 237 VCU_OpeartingMode "VCU运行模式";
+CM_ SG_ 237 VCU_ESCActive "ESC控制触发";
+CM_ SG_ 237 VCU_PowerMode "VCU动力模式";
+CM_ SG_ 237 VCU_ACCRequest "VCU ACC请求";
+CM_ SG_ 237 VCU_ACCStates "VCU ACC开启状态";
+CM_ SG_ 237 VCU_ACCEnable "ACC控制使能";
+CM_ SG_ 237 VCU_MotMaxChargePower "最大允许充电功率";
+CM_ SG_ 237 VCU_MotMaxDischargePower "最大允许放电功率";
+CM_ SG_ 237 VCU_MotTargetAcceleration "请求电机加速度值";
+CM_ SG_ 235 VCU_BMSPumpPercent "电池水泵等级";
+CM_ SG_ 235 VCU_MCUPumpPercent "电机水泵等级";
+CM_ SG_ 235 VCU_RollingCounter_EB "生命信号";
+CM_ SG_ 235 VCU_DriverRequireTorque "驾驶员需求扭矩";
+CM_ SG_ 235 VCU_VehicleSpeedVD "车速有效性";
+CM_ SG_ 235 VCU_MCUPowerOutput "MCU电源输出";
+CM_ SG_ 235 VCU_BrakeSysFault "制动系统故障状态";
+CM_ SG_ 235 VCU_HVACOffSpecReq "空调关闭特殊请求";
+CM_ SG_ 235 VCU_PTCHeatingReq1 "PTC加热开启请求1";
+CM_ SG_ 235 VCU_ThrottlePosition "加速踏板位置信号";
+CM_ SG_ 235 VCU_ActiveReleaseCmd "MCU主动泄放命令";
+CM_ SG_ 235 VCU_PowerOn2ResetReq "请求On2电源重启";
+CM_ SG_ 235 VCU_MainRelaySts "请求上On2电";
+CM_ SG_ 235 VCU_FastChgRelayCmd "快充继电器闭合命令";
+CM_ SG_ 235 VCU_Motor_WaterInletTemp "电机水泵进水口温度";
+CM_ SG_ 235 VCU_IPAS_AlwEnable "自动泊车开启允许";
+CM_ SG_ 235 VCU_BrakeLightReq "制动灯点亮请求";
+CM_ SG_ 235 VCU_KeyPosition "钥匙门位置信号";
+CM_ SG_ 235 VCU_ACFanReq "冷凝风扇启动";
+CM_ SG_ 235 VCU_AlwChargeSts "允许充电状态";
+CM_ SG_ 235 VCU_ACChargeHVILSts "慢充HVIL状态";
+CM_ SG_ 235 VCU_DCChargeHVILSts "快充HVIL状态";
+CM_ SG_ 235 VCU_DriveHVILSts "驱动HVIL状态";
+CM_ SG_ 235 VCU_PowerReduceReq "降功率请求";
+CM_ SG_ 234 VCU_ParkingReqToEPB "请求EPB驻车";
+CM_ SG_ 234 VCU_ESPTorqReqAvailability "ESP扭矩请求响应";
+CM_ SG_ 234 VCU_AccPedalFault "加速踏板故障";
+CM_ SG_ 234 VCU_BrakePedalValue_Reserved "刹车模拟信号";
+CM_ SG_ 234 VCU_CheckSum "校验位";
+CM_ SG_ 234 VCU_RollingCounter "生命信号";
+CM_ SG_ 234 VCU_BrakePedalSts "刹车开关信号";
+CM_ SG_ 234 VCU_DCDCEnableCmd "DCDC使能信号";
+CM_ SG_ 234 VCU_BMSEmergencyCmd "BMS紧急命令";
+CM_ SG_ 234 VCU_BMSMainRelayCmd "BMS主继电器命令";
+CM_ SG_ 234 VCU_GearLevelPosSts "档位信号";
+CM_ SG_ 234 VCU_VehicleSts "整车状态";
+CM_ SG_ 234 VCU_Vehicle_Warning "整车故障报警";
+CM_ SG_ 234 VCU_DrvControlMode "扭矩/转速控制模式选择位";
+CM_ SG_ 234 VCU_DrvRequestTorque "驱动扭矩值";
+CM_ SG_ 234 VCU_DrvRequesSpeed "驱动转速值";
+BA_DEF_ SG_  "GenSigInactiveValue" INT 0 0;
+BA_DEF_ SG_  "GenSigSendType" ENUM  "Cycle","OnChange","OnWrite";
+BA_DEF_ SG_  "GenSigStartValue" INT 0 0;
+BA_DEF_ SG_  "GenSigTimeoutValue" INT 0 1000000000;
+BA_DEF_ BO_  "GenMsgCycleTime" INT 0 0;
+BA_DEF_ BO_  "GenMsgCycleTimeActive" INT 0 0;
+BA_DEF_ BO_  "GenMsgCycleTimeFast" INT 0 0;
+BA_DEF_ BO_  "GenMsgDelayTime" INT 0 0;
+BA_DEF_ BO_  "GenMsgILSupport" ENUM  "No","Yes";
+BA_DEF_ BO_  "DiagRequest" ENUM  "No","Yes";
+BA_DEF_ BO_  "DiagResponse" ENUM  "No","Yes";
+BA_DEF_ BO_  "DiagState" ENUM  "No","Yes";
+BA_DEF_ BO_  "GenMsgNrOfRepetition" INT 0 0;
+BA_DEF_ BO_  "GenMsgSendType" ENUM  "Cycle","NoSendType","IfActive";
+BA_DEF_ BO_  "GenMsgStartDelayTime" INT 0 65535;
+BA_DEF_ BO_  "NmBaseAddress" INT 0 2047;
+BA_DEF_ BO_  "NmMessage" ENUM  "No","Yes";
+BA_DEF_ BU_  "CANoeStartDelay" INT 0 0;
+BA_DEF_ BU_  "CANoeDrift" INT 0 0;
+BA_DEF_ BU_  "CANoeJitterMin" INT 0 0;
+BA_DEF_ BU_  "CANoeJitterMax" INT 0 0;
+BA_DEF_ BU_  "ECU" STRING ;
+BA_DEF_ BU_  "NodeLayerModules" STRING ;
+BA_DEF_ BU_  "DiagStationAddress" HEX 0 15;
+BA_DEF_ BU_  "ILUsed" ENUM  "No","Yes";
+BA_DEF_ BU_  "NmCAN" INT 0 2;
+BA_DEF_ BU_  "NmNode" ENUM  "Not","Yes";
+BA_DEF_ BU_  "NmStationAddress" HEX 0 65535;
+BA_DEF_  "BusType" STRING ;
+BA_DEF_  "Manufacturer" STRING ;
+BA_DEF_  "NmMessageCount" INT 0 255;
+BA_DEF_  "NmType" STRING ;
+BA_DEF_DEF_  "GenSigInactiveValue" 0;
+BA_DEF_DEF_  "GenSigSendType" "Cycle";
+BA_DEF_DEF_  "GenSigStartValue" 0;
+BA_DEF_DEF_  "GenSigTimeoutValue" 0;
+BA_DEF_DEF_  "GenMsgCycleTime" 0;
+BA_DEF_DEF_  "GenMsgCycleTimeActive" 0;
+BA_DEF_DEF_  "GenMsgCycleTimeFast" 0;
+BA_DEF_DEF_  "GenMsgDelayTime" 0;
+BA_DEF_DEF_  "GenMsgILSupport" "No";
+BA_DEF_DEF_  "DiagRequest" "No";
+BA_DEF_DEF_  "DiagResponse" "No";
+BA_DEF_DEF_  "DiagState" "No";
+BA_DEF_DEF_  "GenMsgNrOfRepetition" 0;
+BA_DEF_DEF_  "GenMsgSendType" "Cycle";
+BA_DEF_DEF_  "GenMsgStartDelayTime" 0;
+BA_DEF_DEF_  "NmBaseAddress" 1024;
+BA_DEF_DEF_  "NmMessage" "No";
+BA_DEF_DEF_  "CANoeStartDelay" 0;
+BA_DEF_DEF_  "CANoeDrift" 0;
+BA_DEF_DEF_  "CANoeJitterMin" 0;
+BA_DEF_DEF_  "CANoeJitterMax" 0;
+BA_DEF_DEF_  "ECU" "";
+BA_DEF_DEF_  "NodeLayerModules" "";
+BA_DEF_DEF_  "DiagStationAddress" 0;
+BA_DEF_DEF_  "ILUsed" "No";
+BA_DEF_DEF_  "NmCAN" 0;
+BA_DEF_DEF_  "NmNode" "Not";
+BA_DEF_DEF_  "NmStationAddress" 0;
+BA_DEF_DEF_  "BusType" "CAN";
+BA_DEF_DEF_  "Manufacturer" "";
+BA_DEF_DEF_  "NmMessageCount" 128;
+BA_DEF_DEF_  "NmType" "";
+BA_ "GenMsgCycleTime" BO_ 237 20;
+BA_ "GenMsgCycleTimeActive" BO_ 235 0;
+BA_ "GenMsgCycleTime" BO_ 235 20;
+BA_ "GenMsgCycleTime" BO_ 234 10;
+BA_ "GenSigStartValue" SG_ 237 VCU_SlowChgExitTemp 40;
+BA_ "GenSigStartValue" SG_ 237 VCU_FastChgExitTemp 40;
+BA_ "GenSigStartValue" SG_ 237 VCU_MotTargetAcceleration 100;
+BA_ "GenSigStartValue" SG_ 235 VCU_DriverRequireTorque 3000;
+BA_ "GenSigStartValue" SG_ 235 VCU_Motor_WaterInletTemp 40;
+BA_ "GenSigStartValue" SG_ 234 VCU_ESPTorqReqAvailability 1;
+BA_ "GenSigStartValue" SG_ 234 VCU_DrvRequestTorque 3000;
+BA_ "GenSigStartValue" SG_ 234 VCU_DrvRequesSpeed 15000;
+VAL_ 237 VCU_VehicleHighVoltMode 3 "启动完成" 2 "启动" 1 "自检" 0 "下电模式 " ;
+VAL_ 237 VCU_OpeartingMode 5 "升级模式" 4 "测试模式" 3 "强停模式" 2 "充电模式" 1 "行车模式" 0 "下电模式" ;
+VAL_ 237 VCU_ESCActive 1 "ESC控制触发" 0 "ESC控制未触发" ;
+VAL_ 237 VCU_ACCRequest 3 "Reserved" 2 "pause request" 1 "ACC Fobidden" 0 "ACC Allowed" ;
+VAL_ 237 VCU_ACCStates 1 "Opened" 0 "Closed" ;
+VAL_ 237 VCU_ACCEnable 1 "Enable" 0 "Disable" ;
+VAL_ 235 VCU_BMSPumpPercent 3 "level  3" 2 "level  2" 1 "level  1" 0 "Stop" ;
+VAL_ 235 VCU_MCUPumpPercent 3 "level  3" 2 "level  2" 1 "level  1" 0 "Stop" ;
+VAL_ 235 VCU_VehicleSpeedVD 3 "Reserved" 2 "MCU车速有效" 1 "ESC车速有效" 0 "Invalid" ;
+VAL_ 235 VCU_MCUPowerOutput 1 "Work" 0 "Not Work" ;
+VAL_ 235 VCU_BrakeSysFault 1 "Fault" 0 "No Fault" ;
+VAL_ 235 VCU_HVACOffSpecReq 1 "Request" 0 "Not Request" ;
+VAL_ 235 VCU_PTCHeatingReq1 1 "PTC On (Level 1)" 0 "PTC Off" ;
+VAL_ 235 VCU_ActiveReleaseCmd 1 "Active Release" 0 "Not Active Release" ;
+VAL_ 235 VCU_PowerOn2ResetReq 1 "Request" 0 "No Request" ;
+VAL_ 235 VCU_MainRelaySts 1 "Closed" 0 "Opened" ;
+VAL_ 235 VCU_FastChgRelayCmd 1 "Close" 0 "Open" ;
+VAL_ 235 VCU_IPAS_AlwEnable 1 "Allowed" 0 "Not Allowed" ;
+VAL_ 235 VCU_BrakeLightReq 1 "Request" 0 "No Request" ;
+VAL_ 235 VCU_KeyPosition 3 "Start" 2 "On" 1 "Acc" 0 "Off" ;
+VAL_ 235 VCU_ACFanReq 3 "Reserved" 2 "Fash Fan" 1 "Low Fan" 0 "No Request" ;
+VAL_ 235 VCU_AlwChargeSts 1 "Allowed" 0 "Not Allowed" ;
+VAL_ 235 VCU_ACChargeHVILSts 1 "Connected" 0 "Not Connected" ;
+VAL_ 235 VCU_DCChargeHVILSts 1 "Connected" 0 "Not Connected" ;
+VAL_ 235 VCU_DriveHVILSts 1 "Connected" 0 "Not Connected" ;
+VAL_ 235 VCU_PowerReduceReq 3 "Level-3 Request" 2 "Level-2 Request" 1 "Level-1 Request" 0 "Not Request" ;
+VAL_ 234 VCU_ParkingReqToEPB 3 "Not used" 2 "Lock brake request" 1 "Release brake request" 0 "No request" ;
+VAL_ 234 VCU_ESPTorqReqAvailability 1 "Not available" 0 "Available" ;
+VAL_ 234 VCU_AccPedalFault 1 "Fault" 0 "No Fault" ;
+VAL_ 234 VCU_BrakePedalSts 3 "Error" 2 "Reserved" 1 "Pressed" 0 "Not Pressed" ;
+VAL_ 234 VCU_DCDCEnableCmd 1 "Work" 0 "Not Work" ;
+VAL_ 234 VCU_BMSEmergencyCmd 1 "Work" 0 "Not Work" ;
+VAL_ 234 VCU_BMSMainRelayCmd 1 "Work" 0 "Not Work" ;
+VAL_ 234 VCU_GearLevelPosSts 3 "D" 2 "N" 1 "R" 0 "P" ;
+VAL_ 234 VCU_VehicleSts 1 "Ready" 0 "Not Ready" ;
+VAL_ 234 VCU_Vehicle_Warning 3 ":Level-3 Error(Low)" 2 "Level-2 Error" 1 "Level-1 Error(High)" 0 "No Error" ;
+VAL_ 234 VCU_DrvControlMode 1 "Speed" 0 "Torque" ;
+
