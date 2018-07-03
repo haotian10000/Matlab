@@ -20,16 +20,16 @@ simout = sim(gcs,'SolverType', 'Fixed-step', ...
 %{
 plot figure    
 %}
-subplot(311);
+subplot(3,1,1);
 stairs(get(simout, 'tout'), u(:,1));
 xlabel('time(s)');
 ylabel('Enable');
-subplot(312);
+subplot(3,1,2);
 stairs(get(simout, 'tout'), u(:,2));
 xlabel('time(s)');
 ylabel('Reset');
-subplot(313);
+subplot(3,1,3);
 yout = simout.get('yout');
-stairs(get(simout, 'tout'), yout{1}.Values.Data);
+stairs(get(simout, 'tout'), get(simout, 'yout'));
 xlabel('time(s)');
 ylabel('Count');
