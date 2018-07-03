@@ -3,8 +3,9 @@ function info = ReadDbcFile(file)
    disp(pathstr);
    disp(name);
    disp(ext);
-   if ext ~= strcat('.','dbc')
-       info = 'file type error';
+   if strcmp(ext, 'dbc') == 0
+       info = 'File type error';
+       return;
    end
    cell_obj=cell(10,1);
    i = 1;
