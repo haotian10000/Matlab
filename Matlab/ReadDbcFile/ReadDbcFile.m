@@ -3,11 +3,11 @@ function info = ReadDbcFile(file)
    disp(pathstr);
    disp(name);
    disp(ext);
-   if strcmp(ext, 'dbc') == 0
+   if strcmp(ext, '.dbc') == 0
        info = 'File type error';
        return;
    end
-   cell_obj=cell(10,1);
+   cell_obj=cell(1,1);
    i = 1;
     [fid,msg] = fopen(file,'rt');
     if fid == -1
