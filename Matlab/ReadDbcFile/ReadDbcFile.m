@@ -9,11 +9,16 @@ function [signal,status] = ReadDbcFile(file)
     end
     status = 'OK';
     info = GetMsgObj(file);
-    temp = CellObjToMulti(info(1,1));
-    sys_name = CatSysName(temp);
-    msg = CellObjToMulti(info(1,2));
-    infomation = GetMsgInfo(msg);
-    signal = [sys_name,infomation];
+     sig_tmp = cell(1,8);
+    for i=1:length(info) 
+        temp = CellObjToMulti(info(i,1));
+        sys_name = CatSysName(temp);
+        msg = CellObjToMulti(info(i,2));
+        infomation = GetMsgInfo(msg);
+        sig_cell = [sys_name,infomation];
+        sig_tmp(i,:) = sig_cell;
+    end
+    signal = sig_tmp;
 end
 
 function msg_obj = GetMsgObj(file)
