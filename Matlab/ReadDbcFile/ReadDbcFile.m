@@ -1,4 +1,4 @@
-function [signal,status] = readdbc(file)
+function [signal,status] = ReadDbcFile(file)
     [pathstr,name,ext] = fileparts(file);
     disp(pathstr);
     disp(name);
