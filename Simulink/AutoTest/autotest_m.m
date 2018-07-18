@@ -8,7 +8,7 @@ stop_time = 0.16;
 %{
 autotest script
 %}
-t = [0:step_size:stop_time]';
+t = [0:step_size:stop_time]'; 
 u(:,1) = ones(length(t), 1);
 u(:,2) = [zeros(8,1);ones(5,1);zeros(length(t)-13, 1)];
 simout = sim(gcs,'SolverType', 'Fixed-step', ...
